@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/alexfacciorusso/compose-desktop-toolbox.svg)](https://jitpack.io/#alexfacciorusso/compose-desktop-toolbox)
+
 ## Introduction
 
 A set of tools for your Compose Desktop development delight.
@@ -24,22 +26,13 @@ Kotlin DSL:
 
 ### Snapshots
 
-```kotlin
-repositories {
-    maven("https://maven.pkg.github.com/alexfacciorusso/compose-desktop-toolbox")
-}
+See instructions [here](https://jitpack.io/#alexfacciorusso/compose-desktop-toolbox/main-SNAPSHOT).
 
-dependencies {
-    implementation("com.alexfacciorusso.compose-desktop-toolbox:compose-desktop-toolbox:0.1.0-SNAPSHOT")
-}
-```
+### Releases
 
-### Stable
+WIP
 
-Not yet setup.
-
-<del>
-
+<!--
 ```kotlin
 repositories {
     mavenCentral()
@@ -49,6 +42,4 @@ dependencies {
     implementation("com.alexfacciorusso:compose-desktop-toolbox:0.1.0")
 }
 ```
-
-</del>
-
+-->

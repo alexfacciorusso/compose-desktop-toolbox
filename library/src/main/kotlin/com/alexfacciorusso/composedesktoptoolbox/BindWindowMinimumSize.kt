@@ -7,7 +7,7 @@ import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.window.WindowScope
 import java.awt.Dimension
 
-fun Modifier.updateWindowSize(windowScope: WindowScope) = composed {
+fun Modifier.bindWindowMinimumSize(windowScope: WindowScope) = composed {
     with(windowScope) {
         var updated by remember { mutableIntStateOf(0) }
 

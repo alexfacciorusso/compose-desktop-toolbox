@@ -10,7 +10,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
-import com.alexfacciorusso.composedesktoptoolbox.updateWindowSize
+import com.alexfacciorusso.composedesktoptoolbox.bindWindowMinimumSize
 
 @Composable
 fun Content(modifier: Modifier) {
@@ -43,6 +43,6 @@ fun App(modifier: Modifier = Modifier) {
 
 fun main() = application {
     Window(onCloseRequest = ::exitApplication) {
-        App(modifier = Modifier.updateWindowSize(this))
+        App(modifier = Modifier.bindWindowMinimumSize(this))
     }
 }

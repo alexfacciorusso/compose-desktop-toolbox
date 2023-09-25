@@ -26,11 +26,11 @@ Kotlin DSL:
 
 ```kotlin
 repositories {
-    mavenCentral()
+    maven("https://maven.pkg.github.com/alexfacciorusso/compose-desktop-toolbox")
 }
 
 dependencies {
-    implementation("com.alexfacciorusso:compose-desktop-toolbox:0.1.0-SNAPSHOT")
+    implementation("com.alexfacciorusso.compose-desktop-toolbox:compose-desktop-toolbox:0.1.0-SNAPSHOT")
 }
 ```
 

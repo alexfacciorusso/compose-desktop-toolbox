@@ -6,7 +6,10 @@ plugins {
 }
 
 group = "com.alexfacciorusso.compose-desktop-toolbox"
-version = "0.1.0-SNAPSHOT"
+
+val isSnapshotBuild = project.findProperty("snapshot") == "true"
+
+version = ("0.1.0" + if (isSnapshotBuild) "-SNAPSHOT" else "")
 
 repositories {
     mavenCentral()
@@ -34,16 +37,11 @@ publishing {
     publications {
         register<MavenPublication>("gpr") {
             from(components["java"])
+            artifactId = "compose-desktop-toolbox"
         }
     }
 }
 
-
-
 dependencies {
-    // Note, if you develop a library, you should use compose.desktop.common.
-    // compose.desktop.currentOs should be used in launcher-sourceSet
-    // (in a separate module for demo project and in testMain).
-    // With compose.desktop.common you will also lose @Preview functionality
     implementation(compose.desktop.common)
 }

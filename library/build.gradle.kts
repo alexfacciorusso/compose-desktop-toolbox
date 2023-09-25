@@ -1,5 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
-
 plugins {
     kotlin("jvm")
     id("org.jetbrains.compose")
@@ -8,7 +6,7 @@ plugins {
 }
 
 group = "com.alexfacciorusso.compose-desktop-toolbox"
-version = "0.9-SNAPSHOT"
+version = "0.1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -28,8 +26,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/alexfacciorusso/compose-desktop-toolbox")
             credentials {
-                username = project.findProperty("gpr.user") as? String ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as? String ?: System.getenv("TOKEN")
+                username = project.findProperty("gpr.user") as? String ?: System.getenv("GITHUB_ACTOR")
+                password = project.findProperty("gpr.key") as? String ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }

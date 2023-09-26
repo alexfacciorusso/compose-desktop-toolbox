@@ -17,7 +17,11 @@ repositories {
 dependencies {
     implementation(compose.desktop.currentOs)
 
-    implementation(project(":library"))
+    implementation(project(":compose-desktop-toolbox"))
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 compose.desktop {

@@ -1,10 +1,6 @@
 package com.alexfacciorusso.composedesktoptoolbox
 
-import androidx.compose.runtime.DisposableEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.layout.onSizeChanged
@@ -13,6 +9,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.WindowScope
 import java.awt.Dimension
 
+@ExperimentalComposeDesktopToolboxApi
 fun Modifier.bindWindowMinimumSize(windowScope: WindowScope) = composed {
     with(windowScope) {
         val localDensity = LocalDensity.current

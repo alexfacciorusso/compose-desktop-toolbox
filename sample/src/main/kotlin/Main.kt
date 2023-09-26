@@ -10,6 +10,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
+import com.alexfacciorusso.composedesktoptoolbox.ExperimentalComposeDesktopToolboxApi
 import com.alexfacciorusso.composedesktoptoolbox.bindWindowMinimumSize
 
 @Composable
@@ -41,6 +42,7 @@ fun App(modifier: Modifier = Modifier) {
     }
 }
 
+@OptIn(ExperimentalComposeDesktopToolboxApi::class)
 fun main() = application {
     Window(onCloseRequest = ::exitApplication) {
         App(modifier = Modifier.bindWindowMinimumSize(this))

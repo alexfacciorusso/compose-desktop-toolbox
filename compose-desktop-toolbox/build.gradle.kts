@@ -1,7 +1,6 @@
 plugins {
     kotlin("jvm")
     id("org.jetbrains.compose")
-    `java-library`
     `maven-publish`
 }
 
@@ -28,7 +27,6 @@ publishing {
     publications {
         register<MavenPublication>("gpr") {
             from(components["java"])
-            artifactId = "compose-desktop-toolbox"
         }
     }
 }

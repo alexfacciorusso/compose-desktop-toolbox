@@ -10,6 +10,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "compose-desktop-toolbox"
+rootProject.name = "compose-desktop-toolbox-root"
 
-include(":library", ":sample")
+include(":compose-desktop-toolbox", ":sample")

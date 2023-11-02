@@ -20,6 +20,15 @@ Window(onCloseRequest = ::exitApplication) {
 }
 ```
 
+### `WindowScope.WindowMinimumSize`
+
+```kotlin
+Window(onCloseRequest = ::exitApplication) {
+    WindowMinimumSize(minimumWidth = 600.dp)
+    // ...
+}
+```
+
 ## Download
 
 Kotlin DSL:

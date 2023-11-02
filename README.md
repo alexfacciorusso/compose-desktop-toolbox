@@ -31,7 +31,6 @@ Window(onCloseRequest = ::exitApplication) {
 
 ## Download
 
-Kotlin DSL:
 
 ### Snapshots
 
@@ -40,8 +39,9 @@ See instructions [here](https://jitpack.io/#alexfacciorusso/compose-desktop-tool
 ### Releases
 
 WIP
-
 <!--
+Kotlin DSL:
+
 ```kotlin
 repositories {
     mavenCentral()
